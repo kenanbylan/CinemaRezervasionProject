@@ -1,5 +1,6 @@
 import time 
-
+import os
+import sys
 
 #global degişkenler tüm fonksiyonlar tarafından erişilen değişkenler 
 #                    #     1   2    3     4
