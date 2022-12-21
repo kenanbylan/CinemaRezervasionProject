@@ -4,6 +4,7 @@ import sys
 
 #global degişkenler tüm fonksiyonlar tarafından erişilen değişkenler 
 #                    #     1   2    3     4
+
 KategoriKoltukSayisi = [100, 100, 100, 100]
 kategoriCiro = [0, 0, 0, 0]
 ToplamCiro = 0
@@ -49,6 +50,7 @@ fiyatMatris.append(kategori4fiyat)
 fiyatMatris = [int(i) for i in fiyatMatris] #string listesini int listesine çevirme
 
 
+
 #baslangic durumu
 def salonDurumu():
     for i in range(20):
@@ -63,7 +65,7 @@ def salonDurumu():
             print(matris[i][j], end=" ")
         print()
 
-salonDurumu()
+salonDurumu() #ilk başta salon durumu gösterilir.
 
 
 def biletSayisi(n):
@@ -78,7 +80,6 @@ def toplamCiro():
 #acılıs sayfası 
 print("Hoşgeldiniz")
 while True:
-
     print("1- Bilet Al")
     print("2- Salon Durumu")
     print("3- Toplam Ciro")
@@ -306,8 +307,8 @@ while True:
                             if biletAdet > 0:
                                 matris[i][j] = "X"
                                 biletAdet -= 1
-
-            
+                    
+                    
                     KategoriKoltukSayisi[3] -= biletAdet
                     print("Rezerve edilen koltuklar (Sıra-Koltuk):")
                     for i in range(10,20):
